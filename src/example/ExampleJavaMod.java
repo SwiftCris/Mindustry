@@ -8,6 +8,7 @@ import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
+import mindustry.world.Block;
 
 public class ExampleJavaMod extends Mod {
 
@@ -48,12 +49,16 @@ public class ExampleJavaMod extends Mod {
 
         BaseDialog dialog = new BaseDialog("Block Placed");
         dialog.cont.add("You have placed a block").row();
+
         dialog.cont.button("Dissmiss.", dialog::hide).size(100f, 50f);
         dialog.show();
 
       });
     });
-  }
+    // registerClientComman/CommandHan/r handler);
+
+  };
+
   // Events
 
   // Show a popup when you place a block
@@ -63,6 +68,8 @@ public class ExampleJavaMod extends Mod {
   @Override
   public void loadContent() {
     Log.info("Loading some example content.");
+    new content.Blocks.load();
+
   }
 
 }
