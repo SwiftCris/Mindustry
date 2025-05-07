@@ -52,7 +52,7 @@ public class ExampleJavaMod extends Mod {
         dialog.show();
 
       });
-    });
+    }) bas
   }
   // Events
 
