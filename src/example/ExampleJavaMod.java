@@ -35,10 +35,30 @@ public class ExampleJavaMod extends Mod {
         // 'example-java-mod' in its config)
         dialog.cont.image(Core.atlas.find("example-java-mod-frog")).pad(20f).row();
         dialog.cont.button("I see", dialog::hide).size(100f, 50f);
+
         dialog.show();
+
+      });
+      // i deleted a semiclon
+      // }
+
+    });
+    Events.on(BlockBuildEndEvent.class, e -> {
+      Time.runTask(10f, () -> {
+
+        BaseDialog dialog = new BaseDialog("Block Placed");
+        dialog.cont.add("You have placed a block").row();
+        dialog.cont.button("Dissmiss.", dialog::hide).size(100f, 50f);
+        dialog.show();
+
       });
     });
   }
+  // Events
+
+  // Show a popup when you place a block
+
+  // Events.on(BlockBuild)
 
   @Override
   public void loadContent() {
