@@ -1,8 +1,8 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Mindustry Java Mod Template"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "my-java-mod"
 
 #your name
 author: "You"
