@@ -1,15 +1,15 @@
 #the mod name as displayed in-game
-<<<<<<< HEAD
+#<<<<<<< HEAD
 displayName: "MyMod"
 
 #the internal name of your mod
 name: "test-nindustry-java-nod"
-=======
+#=======
 displayName: "Mindustry Java Mod Template"
 
 #the internal name of your mod
 name: "my-java-mod"
->>>>>>> e2d45f9f21635bc8f124f12685f02a8cbc1e4545
+#>>>>>>> e2d45f9f21635bc8f124f12685f02a8cbc1e4545
 
 #your name
 author: "You"
