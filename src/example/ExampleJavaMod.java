@@ -9,7 +9,7 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-<<<<<<< HEAD
+
 public class ExampleJavaMod extends Mod {
 
   public ExampleJavaMod() {
@@ -65,7 +65,7 @@ public class ExampleJavaMod extends Mod {
   public void loadContent() {
     Log.info("Loading some example content.");
   }
-=======
+
 public class ExampleJavaMod extends Mod{
 
     public ExampleJavaMod(){
@@ -89,6 +89,6 @@ public class ExampleJavaMod extends Mod{
     public void loadContent(){
         Log.info("Loading some example content.");
     }
->>>>>>> e2d45f9f21635bc8f124f12685f02a8cbc1e4545
+/* >>>>>>> */
 
 }
