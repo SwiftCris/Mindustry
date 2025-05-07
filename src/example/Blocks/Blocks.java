@@ -35,6 +35,8 @@ public class Blocks {
         //
         // localized
         description = "A fast conveyor";
+        size = 1;
+        category = Category.distribution;
 
         buildCostMultiplier = 1.0f;
 
