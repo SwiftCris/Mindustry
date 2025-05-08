@@ -26,6 +26,9 @@ public class ExampleJavaMod extends Mod {
     //
     //
     //
+    //
+    //
+    // 
 
     Events.on(ClientLoadEvent.class, e -> {
       // show dialog upon startup
@@ -66,7 +69,7 @@ public class ExampleJavaMod extends Mod {
   // Events.on(BlockBuild)
 
   @Override
-  public void loadContent() {
+  public void loadContent() extends Mod {
     Log.info("Loading some example content.");
     Blocks.load();
 
