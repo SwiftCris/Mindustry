@@ -1,24 +1,18 @@
 #the mod name as displayed in-game
-#<<<<<<< HEAD
+
 displayName: "MyMod"
 
 #the internal name of your mod
-name: "test-nindustry-java-nod"
-#=======
-displayName: "Mindustry Java Mod Template"
+name: "test-mindustry-java-nod"
 
-#the internal name of your mod
-name: "my-java-mod"
-#>>>>>>> e2d45f9f21635bc8f124f12685f02a8cbc1e4545
+displayName: "My great mod"
+
 
 #your name
-author: "You"
+author: "rndunel"
 
 #the fully qualified main class of the mod
 main: "example.ExampleJavaMod"
-
-#the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
 
 #the mod version
 version: 1.0
