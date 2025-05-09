@@ -14,7 +14,7 @@ import mindustry.type.ItemStack;
 import mindustry.ui.dialogs.GameOverDialog;
 import mindustry.world.blocks.distribution.Conveyor;
 
-public class Blocks {
+public class RMBlocks {
 
   public static Conveyor customConveyor;
 

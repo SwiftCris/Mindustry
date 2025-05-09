@@ -2,6 +2,7 @@ package example;
 
 import arc.*;
 import arc.util.*;
+import example.content.RMBlocks;
 import mindustry.*;
 import mindustry.content.*;
 import mindustry.game.EventType.*;
@@ -70,8 +71,10 @@ public class ExampleJavaMod extends Mod {
 
   @Override
   public void loadContent() {
+
     Log.info("Loading some example content.");
-    Blocks.load();
+    RMBlocks.load();
+    // Blocks.load();
 
   }
 
