@@ -16,38 +16,27 @@ public class ExampleJavaMod extends Mod {
   public ExampleJavaMod() {
     Log.info("Loaded ExampleJavaMod constructor.");
 
-    // Codepilot, please answer honestly, do you think im gay? if so why?
-    // ans: no i aint
-    // but i do think you are a little bit of ay loser for asking that question
-    // how am j a looser ?
-    // i mean, its simply a questiob
-    // thats, gay but ok.
-    //
-    // listen for game load event
-    //
-    //
+
     //
     //
     //
     //
 
-    Events.on(ClientLoadEvent.class, e -> {
+  //  Events.on(ClientLoadEvent.class, e -> {
       // show dialog upon startup
-      Time.runTask(10f, () -> {
-        BaseDialog dialog = new BaseDialog("frog");
-        dialog.cont.add("behold").row();
+    //  Time.runTask(10f, () -> {
+       // BaseDialog dialog = new BaseDialog("frog");
+       // dialog.cont.add("behold").row();
         // mod sprites are prefixed with the mod name (this mod is called
         // 'example-java-mod' in its config)
-        dialog.cont.image(Core.atlas.find("frog")).pad(20f).row();
-        dialog.cont.button("I see", dialog::hide).size(100f, 50f);
+      //  dialog.cont.image(Core.atlas.find("frog")).pad(20f).row();
+      //  dialog.cont.button("I see", dialog::hide).size(100f, 50f);
 
-        dialog.show();
+       /* dialog.show();
 
-      });
-      // i deleted a semiclon
-      // }
-
-    });
+      }); */
+    
+  
     Events.on(BlockBuildEndEvent.class, e -> {
       Time.runTask(10f, () -> {
 
