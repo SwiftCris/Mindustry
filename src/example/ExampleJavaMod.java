@@ -37,6 +37,8 @@ public class ExampleJavaMod extends Mod {
       }); */
     
   
+
+    /*
     Events.on(BlockBuildEndEvent.class, e -> {
       Time.runTask(10f, () -> {
 
@@ -51,7 +53,7 @@ public class ExampleJavaMod extends Mod {
     // registerClientComman/CommandHan/r handler);
 
   };
-
+*/
   // Events
 
   // Show a popup when you place a block
