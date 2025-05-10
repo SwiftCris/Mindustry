@@ -1,10 +1,14 @@
 package example;
 
 import arc.*;
+import arc.flabel.effects.WaveEffect;
+import arc.scene.event.EventListener;
 import arc.util.*;
 import example.content.RMBlocks;
 import mindustry.*;
 import mindustry.content.*;
+import mindustry.core.NetServer.ChatFormatter;
+import mindustry.game.EventType;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
@@ -15,6 +19,15 @@ public class ExampleJavaMod extends Mod {
 
   public ExampleJavaMod() {
     Log.info("Loaded ExampleJavaMod constructor.");
+    Events.on(PlayerChatEvent.class, e -> {
+      Player player = e.player;
+      player.sendMessage(e.message);
+      /*
+       * BaseDialog dialog = new BaseDialog("Message");
+       * dialog.cont.add(e.message);
+       * dialog.cont.button("Dismiss", dialog::hide).size(100f, 50f);
+       */
+    });
   }
 
   //
@@ -54,6 +67,7 @@ public class ExampleJavaMod extends Mod {
    * 
    * };
    */
+
   // Events
 
   // Show a popup when you place a block
