@@ -71,7 +71,7 @@ public class RMBlocks {
         size = 3;
 
         consumesPower = true;
-
+        category = Category.production;
         health = 100;
         tier = 3;
         drillTime = 1f;
