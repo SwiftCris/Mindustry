@@ -69,7 +69,7 @@ public class RMBlocks {
                 new ItemStack(Items.lead, 25) });
         // consumesLiquid(Liquids.water);
         consumePower(10f);
-        consumeLiquid(Liquids.water, 6f);
+        consumeLiquid(Liquids.water, 0.15f);
 
         size = 3;
 
