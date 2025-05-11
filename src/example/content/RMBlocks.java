@@ -67,7 +67,10 @@ public class RMBlocks {
                 new ItemStack(Items.titanium, 10),
                 new ItemStack(Items.copper, 35),
                 new ItemStack(Items.lead, 25) });
-        consumesLiquid(Liquids.water);
+        // consumesLiquid(Liquids.water);
+        consumePower(10f);
+        consumeLiquid(Liquids.water, 6f);
+
         size = 3;
 
         consumesPower = true;
@@ -80,7 +83,7 @@ public class RMBlocks {
         drillEffectRnd = 2f;
         description = "General Caporal Commander of zimbabwe";
         hasLiquids = true;
-        liquidCapacity = 100f;
+        liquidCapacity = 1000f;
 
       }
     };
