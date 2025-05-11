@@ -68,6 +68,8 @@ public class RMBlocks {
                 new ItemStack(Items.copper, 35),
                 new ItemStack(Items.lead, 25) });
         consumesLiquid(Liquids.water);
+        size = 3;
+
         consumesPower = true;
 
         health = 100;
