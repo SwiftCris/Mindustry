@@ -5,6 +5,7 @@ import arc.flabel.effects.WaveEffect;
 import arc.scene.event.EventListener;
 import arc.util.*;
 import example.content.RMBlocks;
+import example.content.RMItems;
 import mindustry.*;
 import mindustry.content.*;
 import mindustry.core.NetServer.ChatFormatter;
@@ -78,6 +79,7 @@ public class ExampleJavaMod extends Mod {
   public void loadContent() {
 
     Log.info("Loading some example content.");
+    RMItems.load();
     RMBlocks.load();
     // Blocks.load();
 
