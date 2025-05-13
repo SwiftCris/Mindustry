@@ -96,6 +96,8 @@ public class RMBlocks {
     platinum = new OreBlock("platinum-ore") {
       {
         size = 1;
+        variants = 3;
+
         oreScale = 10f;
         playerUnmineable = true;
         oreDefault = true;
