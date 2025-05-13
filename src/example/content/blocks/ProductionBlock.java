@@ -10,7 +10,7 @@ import mindustry.type.ItemStack;
 import mindustry.world.Block;
 import mindustry.world.blocks.production.Drill;
 
-public class RMEnviroment {
+public class ProductionBlock {
   public static Drill platinumExtractor;
   public static Block leaf;
 

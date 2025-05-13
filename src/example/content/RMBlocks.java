@@ -102,7 +102,8 @@ public class RMBlocks {
       }
     };
     ProductionBlock.load();
-    RMEnviroment.load();
+
+    // RMEnviroment.load();
 
   };
 
