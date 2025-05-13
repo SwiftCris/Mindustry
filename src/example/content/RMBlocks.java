@@ -6,6 +6,8 @@ import arc.Core;
 import arc.graphics.Texture;
 import arc.graphics.g2d.TextureRegion;
 import arc.struct.Seq;
+import example.content.blocks.ProductionBlock;
+import example.content.blocks.RMEnviroment;
 import mindustry.content.Fx;
 import mindustry.content.Items;
 import mindustry.content.Liquids;
@@ -17,13 +19,16 @@ import mindustry.ui.dialogs.GameOverDialog;
 import mindustry.world.Tile;
 import mindustry.world.Tiles;
 import mindustry.world.blocks.distribution.Conveyor;
+import mindustry.world.blocks.environment.OreBlock;
 import mindustry.world.blocks.production.Drill;
 
 public class RMBlocks {
   public static Drill skibidiDrill;
   public static Conveyor customConveyor;
+  public static OreBlock platinum;
 
   public static void load() {
+
     customConveyor = new Conveyor("custom-conveyor") {
       {
         localizedName = "Fast Conveyor";
@@ -86,7 +91,19 @@ public class RMBlocks {
         liquidCapacity = 1000f;
 
       }
+
     };
+    platinum = new OreBlock("platinum-ore") {
+      {
+        size = 1;
+        oreScale = 10f;
+        playerUnmineable = true;
+        oreDefault = true;
+      }
+    };
+    ProductionBlock.load();
+    RMEnviroment.load();
+
   };
 
 }
