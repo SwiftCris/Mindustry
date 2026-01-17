@@ -6,6 +6,7 @@ import arc.Core;
 import arc.graphics.Texture;
 import arc.graphics.g2d.TextureRegion;
 import arc.struct.Seq;
+import example.content.blocks.EnviromentBlock;
 import example.content.blocks.ProductionBlock;
 //import example.content.blocks.RMEnviroment;
 import mindustry.content.Fx;
@@ -106,6 +107,7 @@ public class RMBlocks {
       }
     };
     ProductionBlock.load();
+    EnviromentBlock.load();
 
     // RMEnviroment.load();
 
